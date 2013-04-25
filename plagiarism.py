@@ -58,7 +58,7 @@ def prints(file2):
     prints the score of the copied context if more then score will be more 
     if less copied then score will be less
     '''
-    print "Score of copied text is %f percentage.\nTotal number of words : %d" % (score*100/len(file2),len(file2))
+    print "Score of copied text is %.2f percent.\nTotal number of words : %d" % (score*100/len(file2),len(file2))
     
 
 def parse(infile1, infile2):
