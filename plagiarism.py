@@ -58,7 +58,7 @@ def prints(file2):
     prints the score of the copied context if more then score will be more 
     if less copied then score will be less
     '''
-    print "Score of copied text is %f.\nTotal number of words : %d" % (score,len(file2))
+    print "Score of copied text is %f percentage.\nTotal number of words : %d" % (score*100/len(file2),len(file2))
     
 
 def parse(infile1, infile2):
@@ -147,13 +147,14 @@ def parse(infile1, infile2):
  
 
 #for testing
+'''
 infile1=open('original.txt')
 infile2=open('new.txt')
 #for testing uncomment line below and coment above
 '''
 infile1 = open(raw_input('Enter the first(original) file name : '), 'r')
 infile2 = open(raw_input('Enter the second file name : '), 'r')
-'''
+
 score = 0
 parse(infile1, infile2)
 
